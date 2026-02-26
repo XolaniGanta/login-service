@@ -1,3 +1,4 @@
+
 using Login_Service.Entities;
 using Microsoft.EntityFrameworkCore;
 
@@ -7,5 +8,5 @@ public class UserDb : DbContext
 {
     public UserDb(DbContextOptions<UserDb> options) : base(options){}
     
-    public DbSet<User> Users { get; set; }
+    public DbSet<User> users { get; set; }
 }
